@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SuperQuiz.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            
+        </Frame>
+        
+        <Label FontSize="30" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Попробуй пройти этот Quiz! "/>
+                        
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Label x:Name="questionLabel" Text="Question text goes here" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+        <Entry x:Name="answerEntry" Placeholder="Enter your answer" HorizontalOptions="FillAndExpand" />
+        <Button Text="Отправить ответ" Clicked="SubmitButton_Clicked" HorizontalOptions="FillAndExpand" />
+        <Button Text="Добавить вопрос" Clicked="AddQuestionButton_Clicked" HorizontalOptions="FillAndExpand" />
+        <Button Text="Удалить вопрос" Clicked="DeleteQuestionButton_Clicked" HorizontalOptions="FillAndExpand"/>
+
+    </StackLayout>
+
+</ContentPage>
