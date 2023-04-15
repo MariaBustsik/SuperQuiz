@@ -25,7 +25,7 @@ namespace SuperQuiz
 
             // Считывание вопросов с файла
             
-            var questionsFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Questions.txt");
+            var questionsFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Questions1.txt");
             
             if (File.Exists(questionsFilePath))
             {
@@ -91,7 +91,7 @@ namespace SuperQuiz
                 var newAnswer = await DisplayPromptAsync("Новый ответ", "Введи новый ответ:");
                 if (!string.IsNullOrWhiteSpace(newAnswer))
                 {
-                    var questionsFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Questions.txt");
+                    var questionsFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Questions1.txt");
                     File.AppendAllText(questionsFilePath, $"{newQuestion},{newAnswer}\n");
                 }
             }
@@ -113,7 +113,7 @@ namespace SuperQuiz
                 if (task.Result)
                 {
                     questions.Remove(questionToDelete);
-                    var questionsFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Questions.txt");
+                    var questionsFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Questions1.txt");
                     File.WriteAllLines(questionsFilePath, questions.Select(q => $"{q.Text},{q.Answer}"));
                     if (questions.Count > 0)
                     {

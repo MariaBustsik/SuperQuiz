@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperQuiz.Android", "SuperQ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperQuiz.iOS", "SuperQuiz.iOS\SuperQuiz.iOS.csproj", "{2A8B814C-755B-4CD5-A771-774896B0B9C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperQuiz", "SuperQuiz\SuperQuiz.csproj", "{963BCFA7-24F8-44EA-A156-C69D6EBB3031}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperQuiz", "SuperQuiz\SuperQuiz.csproj", "{963BCFA7-24F8-44EA-A156-C69D6EBB3031}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{3D6E086C-0AA4-4F6F-B592-1C0F518EC9FB}"
 EndProject

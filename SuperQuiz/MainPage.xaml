@@ -12,7 +12,7 @@
             <Label.FormattedText>
                 <FormattedString>
                     <FormattedString.Spans>
-                        <Span Text="Попробуй пройти этот Quiz! "/>
+                        <Span Text="Quiz угадай столицу! "/>
                         
                     </FormattedString.Spans>
                 </FormattedString>
